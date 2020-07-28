@@ -54,10 +54,10 @@ public class MainProgram {
     public static void sort(int[] array) {
         int indexSmallest;
         System.out.println(Arrays.toString(array));
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length - 1 ; i++) {
             indexSmallest = indexOfSmallestFrom(array, i);
             swap(array, i, indexSmallest);
-            System.out.println(Arrays.toString(array));
+            //System.out.println(Arrays.toString(array));
         }
 
     }
